@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <meta charset="UTF=8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="home.html" class="logo"
+          ><img src="/imagens/IDEAL_-_LOGO.png" id="imgLogo"
+        /></a>
+        <input type="text" placeholder="Buscar" class="buscar" />
+        <ul class="menuDoCanto">
+          <li><a href="login.html">Entre ou Cadastre-se</a></li>
+          <li>
+            <a href="favoritos.html"
+              ><img src="/imagens/Favorito.png" class="favorito"
+            /></a>
+          </li>
+          <li>
+            <a href="sacola.html"><img src="/imagens/SACOLA.png" id="sacola" /></a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <ul class="lista">
+          <li>
+            <a href="feminino.html"><button class="botao">Feminino</button></a>
+          </li>
+          <li>
+            <a href="masculino.html"
+              ><button class="botao">Masculino</button></a
+            >
+          </li>
+          <li>
+            <a href="infantil.html"><button class="botao">Infantil</button></a>
+          </li>
+          <li>
+            <a href="plusSize.html"><button class="botao">Plus Size</button></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="login">
+      <h2 class="login__titulo">Login</h2>
+      <form class="login_formulario">
+        <div class="login__email">
+          <label for="email">Email:</label>
+          <input type="text" />
+        </div>
+        <br />
+        <div class="login__senha">
+          <label for="password">Senha:</label>
+          <input type="password" />
+        </div>
+        <br />
+        <div class="login__alternativo">
+          <a href=""><img src="img" /></a> | <a href=""><img src="img" /></a> |
+          <a href=""><img src="img" /></a><br>
+          <a href="">Esqueceu a senha?</a>
+        </div>
+        <br />
+        <div>
+          <input class="login__botao" type="submit" value="Entrar"/>
+          <a href="cadastro.html"><input class="login__botao" type="button" value="Cadastre-se" /></a></div>
+          <br />
+          <br />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="esquerda">
+        <h4>Fale Conosco</h4>
+        <input
+          class="nome"
+          type="text"
+          name="nome"
+          placeholder="Nome"
+          required
+        />
+        <div class="celularemail">
+          <input class="email" type="email" name="email" placeholder="Email" />
+          <input
+            class="celular"
+            type="tel"
+            name="celular"
+            placeholder="Celular"
+            required
+          />
+        </div>
+        <div class="mensagem">
+          <textarea
+            class="mensagem"
+            name="mensagem"
+            rows="10"
+            cols="30"
+            maxlength="500"
+            placeholder="Mensagem..."
+            required
+          ></textarea>
+          <input class="submit" type="submit" id="submit" />
+        </div>
+      </div>
+
+      <div class="direita">
+        <h4>Newsletter</h4>
+        <p>Inscreva-se na nossa newsletter!</p>
+        <input type="email" id="email_newsletter" placeholder="Email" />
+        <input type="submit" id="submit" value="Cadastrar" />
+        <a href="quem_somos.html"><h5>Quem Somos</h5></a>
+        <a href="pinterest"><img src="img" /></a>
+        <a href="twitter"><img src="img" /></a>
+        <a href="instagram"><img src="img" /></a>
+        <a href="facebook"><img src="img" /></a>
+      </div>
+    </footer>
+  </body>
+</html>

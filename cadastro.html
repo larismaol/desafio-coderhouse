@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF=8" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="home.html" class="logo"
+          ><img src="/imagens/IDEAL_-_LOGO.png" id="imgLogo"
+        /></a>
+        <input type="text" placeholder="Buscar" class="buscar" />
+        <ul class="menuDoCanto">
+          <li><a href="login.html">Entre ou Cadastre-se</a></li>
+          <li>
+            <a href="favoritos.html"
+              ><img src="imagens/Favorito.png" class="favorito"
+            /></a>
+          </li>
+          <li>
+            <a href="sacola.html"><img src="imagens/SACOLA.png" id="sacola" /></a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <ul class="lista">
+          <li>
+            <a href="feminino.html"><button class="botao">Feminino</button></a>
+          </li>
+          <li>
+            <a href="masculino.html"
+              ><button class="botao">Masculino</button></a
+            >
+          </li>
+          <li>
+            <a href="infantil.html"><button class="botao">Infantil</button></a>
+          </li>
+          <li>
+            <a href="plusSize.html"><button class="botao">Plus Size</button></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="cadastro">      
+      <h2 class="cadastro__titulo">Cadastro</h2>
+      <form>
+      <div class="cadastro__total">
+        <section class="cadastro__esquerda">
+          <label for="nomeCompleto">Nome completo:</label>
+          <br>
+          <input type="text" />
+          <br />
+          <br />
+          <label for="dataNascimento">Data de nascimento:</label>
+          <br>
+          <input type="date" />
+          <br />
+          <br />
+          <input type="radio" name="gender" value="m" />
+          <label for="masculino">Masculino</label>
+
+          <input type="radio" name="gender" value="f" />
+          <label for="feminino">Feminino</label>
+
+          <input type="radio" name="gender" value="o" />
+          <label for="outro">Outro</label>
+          <br />
+          <br />
+          <label for="email">Email:</label>
+          <br>
+          <input type="email" />
+          <br />
+          <br />
+          <label for="cpf">CPF:</label>
+          <br>
+          <input
+            type="text"
+            name="cpf"
+            size="14"
+            maxlength="14"
+            pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
+          />
+          <br />
+          <br />
+          <label for="password">Senha:</label>
+          <br />
+          <input type="password" />
+          <br />
+          <br />
+          <label for="password">Repetir Senha:</label>
+          <br />
+          <input type="password" />
+        </section>
+        <section class="cadastro__direita">
+          <br />
+          <br />
+          <label for="cep">CEP:</label>
+          <br>
+          <input type="text" name="cep" size="5" maxlength="5" /> -
+          <input type="text" name="cep2" size="3" maxlength="3" />
+          <br />
+          <br />
+          <label for="endereco">Endereço:</label>
+          <br>
+          <input type="text" />
+          <br>
+          <br>
+          <label for="numero">Número:</label>
+          <br>
+          <input type="text" />
+          <br />
+          <br />
+          <label for="complemento">Complemento:</label>
+          <br>
+          <input type="number" />
+          <br />
+          <br />
+        </section>
+      </div>
+          <input class="botao" type="submit" value="Cadastrar" />
+      </form>
+    </main>
+    <footer>
+      <div class="esquerda">
+        <h4>Fale Conosco</h4>
+        <input
+          class="nome"
+          type="text"
+          name="nome"
+          placeholder="Nome"
+          required
+        />
+        <div class="celularemail">
+          <input class="email" type="email" name="email" placeholder="Email" />
+          <input
+            class="celular"
+            type="tel"
+            name="celular"
+            placeholder="Celular"
+            required
+          />
+        </div>
+        <div class="mensagem">
+          <textarea
+            class="mensagem"
+            name="mensagem"
+            rows="10"
+            cols="30"
+            maxlength="500"
+            placeholder="Mensagem..."
+            required
+          ></textarea>
+          <input class="submit" type="submit" id="submit" />
+        </div>
+      </div>
+
+      <div class="direita">
+        <h4>Newsletter</h4>
+        <p>Inscreva-se na nossa newsletter!</p>
+        <input type="email" id="email_newsletter" placeholder="Email" />
+        <input type="submit" id="submit" value="Cadastrar" />
+        <a href="quem_somos.html"><h5>Quem Somos</h5></a>
+        <a href="pinterest"><img src="img" /></a>
+        <a href="twitter"><img src="img" /></a>
+        <a href="instagram"><img src="img" /></a>
+        <a href="facebook"><img src="img" /></a>
+      </div>
+    </footer>
+  </body>
+</html>

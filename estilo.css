@@ -1,0 +1,381 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+header{
+    background-color:#F2E9E1;
+}
+
+.menuDoCanto{
+    display:flex;
+    flex-direction:row;
+    gap:15px;
+    align-items:center;
+    
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    justify-content: center; 
+    padding-bottom:5px;  
+}
+
+#imgLogo{
+    width:150px;
+    padding-top:25px;
+}
+
+nav{
+    padding-top:10px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-between;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.buscar{
+    padding: 8px 2px;
+    border-radius:15px;
+    border: solid #DB9A8F;
+    width:500px;
+    margin-left:115px;
+}
+
+.buscar:focus{
+    border: solid #db8273;
+}
+
+.botao{
+    background: #DB9A8F; 
+    border-radius: 50px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    color: #000; 
+    border: none; 
+    font-size: 16px;
+    display:inline-block;
+}
+.botao:hover{
+    background: #db8273;
+    color:black;
+}
+
+.favorito{
+    width:35px;
+    padding-top:2px;
+}
+
+#sacola{
+    width: 36px;
+    
+}
+
+.galeria {
+    margin: 50px 550px;
+    width: 800px;
+    height: 300px;
+    overflow: hidden;
+    
+}
+
+.galeria .imagens {
+    width: 500%;
+    animation-name: carrosel;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.galeria .imagens img {
+    width: 19.9%;
+}
+
+@keyframes carrosel {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+    100% {margin-left: -400%;}
+}
+
+.imgCenter{
+    width:200px;
+    height:300px;
+}
+
+.imgCards{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.imgCard{
+    display:flex;
+    flex-direction: column;
+}
+p{
+    text-align:center;
+    font-weight:500;
+}
+
+footer{
+    background-color:#F2E9E1;
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.esquerda{
+    margin: 30px;
+    margin-left: 150px;
+}
+
+.esquerda h4{
+    color:  #DB9A8F;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.esquerda input{
+    display: flex;
+}
+
+.esquerda .nome{
+    margin: 10px;
+    padding-right: 200px;
+}
+
+.esquerda .celular{
+    margin: 10px;
+}
+
+.esquerda .email{
+    margin: 10px;
+}
+
+.esquerda .mensagem{
+    margin: 5px;
+}
+
+.esquerda .submit{
+    background: #DB9A8F; 
+    border-radius: 50px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    color: #000; 
+    border: none; 
+    font-size: 16px;
+    display: inline-block;
+    
+}
+
+.esquerda .submit:hover{
+    background: #db8273;
+    color:black;
+}
+
+.esquerda .celularemail{
+    display: flex;
+}
+
+.mensagem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.direita{
+    display: inline-block;
+    margin: 30px;
+    margin-right: 150px;
+    align-items: center;
+
+}
+
+.direita h4{
+    color:  #DB9A8F;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+   
+}
+
+.direita p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.direita #submit{
+    background: #DB9A8F; 
+    border-radius: 50px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    color: #000; 
+    border: none; 
+    font-size: 16px;
+    display: inline-block;
+
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #F2E9E1;
+    border-radius: 10px;
+    margin: 30px 550px;
+    padding: 10px 0 10px 0;
+}
+
+.login__titulo {
+    background-color:#DB9A8F;
+    display: flex;
+    padding: 0 0 10px 0;
+    margin: 20px 40px;
+    justify-content: center;
+    font-size: 35px;
+    border-radius: 50px;
+}
+
+.login__botao {
+    background: #DB9A8F; 
+    border-radius: 50px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    color: #000; 
+    border: none; 
+    font-size: 16px;
+}
+
+.login__botao:hover {
+     background: #db8273;
+    color:black;
+}
+
+
+
+.cadastro {
+    border: 3px solid #F2E9E1;
+    border-radius: 10px;
+    margin: 30px 400px;
+    padding: 20px 90px;
+
+}
+.cadastro__titulo {
+    background-color:#DB9A8F;
+    display: flex;
+    padding: 0 0 10px 0;
+    justify-content: center;
+    font-size: 35px;
+    border-radius: 50px;
+}
+
+.cadastro__total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom:20px;
+}
+.cadastro__direita{
+    margin-left:20px;
+}
+
+
+
+.menuSacola {
+    height: 128px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menuSacola p{
+    display: flex;
+    align-items: center;
+
+}
+.sacola {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items:center;
+    gap:10px;
+    margin: 100px;
+    margin-bottom:20px;
+}
+
+.sacola__img {
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+
+.sacola__titulo{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.quemSomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #F2E9E1;
+    border-radius: 10px;
+    margin: 20px 80px;
+
+}
+
+.quemSomos h3 {
+    background: #DB9A8F;
+    color:black;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px 30px;
+}
+
+.quemSomos__paragrafo {
+    padding: 10px;
+    text-align: center;
+}
+
+.main {
+    margin: 80px 50px 80px 50px;
+    color: #F2E9E1;
+    font-size: 80px;
+}
+
+
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fav {
+    font-size: 100px;
+    color:#F2E9E1;
+    padding: 80px 0 80px 0;
+
+}
+
+.filtro {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
